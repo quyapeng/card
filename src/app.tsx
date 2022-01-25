@@ -1,12 +1,16 @@
-import React from 'react'
-import './app.css'
-
+import React from "react";
+import "./app.css";
+// import wx from "wx-server-sdk";
 class App extends React.Component {
-  render () {
-    return (
-      this.props.children
-    )
+  onLaunch() {
+    // wx.cloud.init({
+    //   env: "test-2gufqy4ad894b9e7",
+    //   traceUser: true,
+    // });
+  }
+  render() {
+    return this.props.children;
   }
 }
 
-export default App
+export default App;

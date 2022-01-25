@@ -1,8 +1,8 @@
 {
-  "name": "v2ex",
+  "name": "card",
   "version": "1.0.0",
   "private": true,
-  "description": "v2ex-taro",
+  "description": "card-taro",
   "main": "index.js",
   "scripts": {
     "build:weapp": "taro build --type weapp",
