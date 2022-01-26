@@ -10,6 +10,7 @@ import "./index.css";
 interface IState {
   loading: boolean;
   threads: IThread[];
+  userinfo: any;
 }
 
 class Index extends React.Component<{}, IState> {
@@ -20,6 +21,9 @@ class Index extends React.Component<{}, IState> {
   state = {
     loading: true,
     threads: [],
+    userinfo: {
+      openid: "",
+    },
   };
 
   async componentDidMount() {
@@ -36,11 +40,11 @@ class Index extends React.Component<{}, IState> {
     //     title: '载入远程数据错误'
     //   })
     // }
-    console.log(Taro);
-    // Taro.cloud.init({
-    //   env: "test-2gufqy4ad894b9e7",
-    //   traceUser: true,
-    // });
+    console.log("Taro", Taro.cloud);
+    Taro.cloud.init({
+      env: "test-2gufqy4ad894b9e7",
+      traceUser: true,
+    });
 
     // Taro.cloud.callFunction({
     //   name: "login",
@@ -53,13 +57,21 @@ class Index extends React.Component<{}, IState> {
     // });
   }
   getOpenid: any = (e) => {
-    console.log("t", Taro);
+    console.log("t", e);
+    // Taro.cloud.init({
+    //   env: "test-2gufqy4ad894b9e7",
+    //   traceUser: true,
+    // });
+    let that = this;
     Taro.cloud
       .callFunction({
         name: "login",
       })
       .then((res) => {
-        console.log("res", res);
+        that.setState({
+          userinfo: res.result,
+          loading: false,
+        });
       });
   };
   render() {
@@ -67,6 +79,7 @@ class Index extends React.Component<{}, IState> {
     return (
       <View className="index">
         <View onClick={this.getOpenid}>test</View>
+        <View>{this.state.userinfo?.openid}</View>
         {/* <ThreadList threads={threads} loading={loading} /> */}
       </View>
     );

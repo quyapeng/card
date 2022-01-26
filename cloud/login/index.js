@@ -1,10 +1,7 @@
 // 云函数入口文件
 const cloud = require("wx-server-sdk");
 
-cloud.init({
-  env: "test-2gufqy4ad894b9e7",
-  traceUser: true
-});
+cloud.init();
 
 // 云函数入口函数
 exports.main = async (event, context) => {
