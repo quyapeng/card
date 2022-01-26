@@ -1,4 +1,5 @@
-const HOST_URI = "https://www.v2ex.com/api/";
+const HOST_URI =
+  "https://koa-r2t5-1585115-1309416621.ap-shanghai.run.tcloudbase.com/";
 
 // 获取节点
 // 所有的节点
@@ -20,6 +21,10 @@ const GET_REPLIES = "replies/show.json";
 
 // 获取用户信息
 const GET_USERINFO = "members/show.json";
+
+// test
+const GET_count = "api/count";
+//
 
 function queryString(obj?: Object) {
   if (!obj) {
@@ -62,6 +67,10 @@ function getTopics(o?) {
 function getIndex(o) {
   return HOST_URI + GET_TOPICS + queryString(o);
 }
+
+function test() {
+  return HOST_URI + GET_count;
+}
 export default {
   getAllNode,
   getNodeInfo,
@@ -70,4 +79,5 @@ export default {
   getHotNodes,
   queryString,
   getTopics,
+  test,
 };

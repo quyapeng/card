@@ -27,6 +27,19 @@ class Index extends React.Component<{}, IState> {
   };
 
   async componentDidMount() {
+    try {
+      Taro.request<IThread[]>({
+        url: api.test(),
+        method: "GET",
+        complete: (res) => {
+          console.log("res----", res);
+        },
+      });
+    } catch (error) {
+      Taro.showToast({
+        title: "载入远程数据错误",
+      });
+    }
     // try {
     //   const res = await Taro.request<IThread[]>({
     //     url: api.getLatestTopic()
