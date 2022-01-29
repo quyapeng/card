@@ -40,11 +40,11 @@ class Index extends React.Component<{}, IState> {
         title: "载入远程数据错误",
       });
     }
-    console.log("Taro", Taro.cloud);
-    Taro.cloud.init({
-      env: "test-2gufqy4ad894b9e7",
-      traceUser: true,
-    });
+    // console.log("Taro", Taro.cloud);
+    // Taro.cloud.init({
+    //   env: "test-2gufqy4ad894b9e7",
+    //   traceUser: true,
+    // });
 
     // Taro.cloud.callFunction({
     //   name: "login",
