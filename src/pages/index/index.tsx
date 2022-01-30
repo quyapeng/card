@@ -40,11 +40,6 @@ class Index extends React.Component<{}, IState> {
         title: "载入远程数据错误",
       });
     }
-    // console.log("Taro", Taro.cloud);
-    // Taro.cloud.init({
-    //   env: "test-2gufqy4ad894b9e7",
-    //   traceUser: true,
-    // });
 
     // Taro.cloud.callFunction({
     //   name: "login",
@@ -56,7 +51,7 @@ class Index extends React.Component<{}, IState> {
     //   },
     // });
   }
-  getOpenid: any = (e) => {
+  getOpenId: any = (e) => {
     console.log("t", e);
     // Taro.cloud.init({
     //   env: "test-2gufqy4ad894b9e7",
@@ -78,7 +73,7 @@ class Index extends React.Component<{}, IState> {
     // const { loading, threads } = this.state;
     return (
       <View className="index">
-        <View onClick={this.getOpenid}>test</View>
+        <View onClick={this.getOpenId}>test</View>
         <View>{this.state.userinfo?.openid}</View>
         {/* <ThreadList threads={threads} loading={loading} /> */}
       </View>
