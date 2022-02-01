@@ -11,10 +11,6 @@ class App extends React.Component {
   }
   componentDidMount() {
     console.log("componentDidMount");
-    // wx.cloud.init({
-    //   env: "test-2gufqy4ad894b9e7",
-    //   traceUser: true,
-    // });
   }
   render() {
     return this.props.children;
