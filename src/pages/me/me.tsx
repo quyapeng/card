@@ -1,50 +1,41 @@
-import Taro from '@tarojs/taro'
-import React from 'react'
-import { View, Text, Navigator } from '@tarojs/components'
-import allNodes from './all_node'
-import api from '../../utils/api'
+import Taro from "@tarojs/taro";
+import React from "react";
+import { View, Text, Navigator } from "@tarojs/components";
+import allNodes from "./all_node";
+import api from "../../utils/api";
 
-import './nodes.css'
+import "./nodes.css";
 
 class Nodes extends React.Component<{}, {}> {
   config = {
-    navigationBarTitleText: '节点'
-  }
+    navigationBarTitleText: "我的",
+  };
 
-  render () {
-    const element = allNodes.map(item => {
-      const nodes = item.nodes.map(node => {
+  render() {
+    const element = allNodes.map((item) => {
+      const nodes = item.nodes.map((node) => {
         return (
           <Navigator
-            className='tag'
+            className="tag"
             url={`/pages/node_detail/node_detail${api.queryString(node)}`}
             key={node.full_name}
           >
-            <Text>
-              {node.full_name}
-            </Text>
+            <Text>{node.full_name}</Text>
           </Navigator>
-        )
-      })
+        );
+      });
       return (
-        <View key={item.title} className='container'>
-          <View className='title'>
-            <Text style='margin-left: 5px'>
-              {item.title}
-            </Text>
+        <View key={item.title} className="container">
+          <View className="title">
+            <Text style="margin-left: 5px">{item.title}</Text>
           </View>
-          <View className='nodes'>
-            {nodes}
-          </View>
+          <View className="nodes">{nodes}</View>
         </View>
-      )
-    })
-    return (
-      <View className='node-container'>
-        {element}
-      </View>
-    )
+      );
+    });
+    // return <View className="node-container">{element}</View>;
+    return <View>我的</View>;
   }
 }
 
-export default Nodes
+export default Nodes;
