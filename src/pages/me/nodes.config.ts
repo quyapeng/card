@@ -1,3 +1,3 @@
 export default {
-  navigationBarTitleText: '节点'
-}
+  navigationBarTitleText: "我的",
+};
