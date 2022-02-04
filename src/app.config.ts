@@ -2,7 +2,7 @@ export default {
   pages: [
     "pages/index/index",
     "pages/me/me",
-    "pages/hot/hot",
+    "pages/list/index",
     "pages/node_detail/node_detail",
     "pages/thread_detail/thread_detail",
   ],
@@ -17,7 +17,7 @@ export default {
       {
         iconPath: "resource/hotest.png",
         selectedIconPath: "resource/hotest_on.png",
-        pagePath: "pages/hot/hot",
+        pagePath: "pages/list/index",
         text: "列表",
       },
       {
