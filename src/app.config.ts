@@ -35,7 +35,7 @@ export default {
   window: {
     backgroundTextStyle: "light",
     navigationBarBackgroundColor: "#fff",
-    navigationBarTitleText: "V2EX",
+    navigationBarTitleText: "祝福",
     navigationBarTextStyle: "black",
   },
 };
