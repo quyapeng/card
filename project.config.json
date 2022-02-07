@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "dist/",
   "projectname": "taro-v2ex",
-  "cloudfunctionRoot": "cloud/",
+  "cloudfunctionRoot": "cloudfunctionRoot/",
   "description": "v2ex-taro",
   "appid": "wx2892253734ed00fc",
   "setting": {
@@ -23,9 +23,9 @@
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "lazyloadPlaceholderEnable": false,
-    "useMultiFrameRuntime": true,
-    "useApiHook": true,
-    "useApiHostProcess": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": false,
+    "useApiHostProcess": false,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
@@ -37,10 +37,7 @@
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "disableUseStrict": false,
-    "showES6CompileOption": false,
-    "useCompilerPlugins": false,
-    "minifyWXML": true
+    "showES6CompileOption": false
   },
   "compileType": "miniprogram",
   "libVersion": "2.21.3",
