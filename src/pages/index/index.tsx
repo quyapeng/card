@@ -1,6 +1,6 @@
 import Taro from "@tarojs/taro";
 import React from "react";
-import { View } from "@tarojs/components";
+import { View, Swiper, SwiperItem, Image } from "@tarojs/components";
 import { ThreadList } from "../../components/thread_list";
 import { IThread } from "../../interfaces/thread";
 import api from "../../utils/api";
@@ -77,6 +77,37 @@ class Index extends React.Component<{}, IState> {
         <View onClick={this.getOpenId}>test</View>
         <View>{this.state.userinfo?.openid}</View>
         {/* <ThreadList threads={threads} loading={loading} /> */}
+        <Swiper
+          className="test-h"
+          indicatorColor="#999"
+          indicatorActiveColor="#333"
+          circular
+          indicatorDots
+          autoplay
+        >
+          <SwiperItem>
+            <Image
+              style="width: 300px;height: 100px;background: #fff;"
+              src="../../resource/image1.jpeg"
+            />
+          </SwiperItem>
+          <SwiperItem>
+            <View className="demo-text-2">
+              <Image
+                style="width: 300px;height: 100px;background: #fff;"
+                src="../../resource/image2.jpeg"
+              />
+            </View>
+          </SwiperItem>
+          <SwiperItem>
+            <View className="demo-text-3">
+              <Image
+                style="width: 300px;height: 100px;background: #fff;"
+                src="../../resource/image3.jpeg"
+              />
+            </View>
+          </SwiperItem>
+        </Swiper>
       </View>
     );
   }
