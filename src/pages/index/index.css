@@ -1,0 +1,33 @@
+.index {
+  margin: 0 20rpx;
+}
+
+.index-h {
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+
+.flex-wrp {
+  margin: 40rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-item {
+  /* flex: 1; */
+  flex: 1;
+  margin: 0 auto;
+}
+.flex-item image {
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.flex-item text {
+  text-align: center;
+  display: block;
+  margin: 20rpx 0;
+}
