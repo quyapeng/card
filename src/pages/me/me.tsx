@@ -1,7 +1,7 @@
 import Taro from "@tarojs/taro";
 import React from "react";
-import { View, Text, Navigator } from "@tarojs/components";
-import allNodes from "./all_node";
+import { View, Text, Navigator, Image } from "@tarojs/components";
+import me from "./me";
 import api from "../../utils/api";
 
 import "./nodes.css";
@@ -12,29 +12,36 @@ class Nodes extends React.Component<{}, {}> {
   };
 
   render() {
-    const element = allNodes.map((item) => {
-      const nodes = item.nodes.map((node) => {
-        return (
-          <Navigator
-            className="tag"
-            url={`/pages/node_detail/node_detail${api.queryString(node)}`}
-            key={node.full_name}
-          >
-            <Text>{node.full_name}</Text>
-          </Navigator>
-        );
-      });
-      return (
-        <View key={item.title} className="container">
-          <View className="title">
-            <Text style="margin-left: 5px">{item.title}</Text>
-          </View>
-          <View className="nodes">{nodes}</View>
-        </View>
-      );
-    });
+    // const element = allNodes.map((item) => {
+    //   const nodes = item.nodes.map((node) => {
+    //     return (
+    //       <Navigator
+    //         className="tag"
+    //         url={`/pages/node_detail/node_detail${api.queryString(node)}`}
+    //         key={node.full_name}
+    //       >
+    //         <Text>{node.full_name}</Text>
+    //       </Navigator>
+    //     );
+    //   });
+    //   return (
+    //     <View key={item.title} className="container">
+    //       <View className="title">
+    //         <Text style="margin-left: 5px">{item.title}</Text>
+    //       </View>
+    //       <View className="nodes">{nodes}</View>
+    //     </View>
+    //   );
+    // });
     // return <View className="node-container">{element}</View>;
-    return <View>我的</View>;
+    return (
+      <View className="me">
+        <View className="user_info">
+          <Image src={""} />
+          <Text>王小米啊</Text>
+        </View>
+      </View>
+    );
   }
 }
 

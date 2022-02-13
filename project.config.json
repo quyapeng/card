@@ -1,8 +1,8 @@
 {
   "miniprogramRoot": "dist/",
-  "projectname": "taro-v2ex",
+  "projectname": "card",
   "cloudfunctionRoot": "cloudfunctionRoot/",
-  "description": "v2ex-taro",
+  "description": "card",
   "appid": "wx2892253734ed00fc",
   "setting": {
     "urlCheck": false,
