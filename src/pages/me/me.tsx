@@ -1,10 +1,9 @@
 import Taro from "@tarojs/taro";
 import React from "react";
 import { View, Text, Navigator, Image } from "@tarojs/components";
-import me from "./me";
 import api from "../../utils/api";
 
-import "./nodes.css";
+import "./me.css";
 
 class Nodes extends React.Component<{}, {}> {
   config = {
