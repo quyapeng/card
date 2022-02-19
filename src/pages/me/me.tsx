@@ -39,6 +39,24 @@ class Nodes extends React.Component<{}, {}> {
           <Image src={""} />
           <Text>王小米啊</Text>
         </View>
+        <View className="flex-wrp" style="flex-direction:row;">
+          <View className="flex-item">
+            <Image src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Text>我的贺卡</Text>
+          </View>
+          <View className="flex-item">
+            <Image src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Text>送出祝福</Text>
+          </View>
+          <View className="flex-item">
+            <Image src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Text>我的收藏</Text>
+          </View>
+          <View className="flex-item">
+            <Image src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Text>敬请期待</Text>
+          </View>
+        </View>
       </View>
     );
   }
