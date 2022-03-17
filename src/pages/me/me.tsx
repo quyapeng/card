@@ -57,6 +57,10 @@ class Nodes extends React.Component<{}, {}> {
             <Text>敬请期待</Text>
           </View>
         </View>
+        <View>
+          <Text>list</Text>
+          <Text>退出</Text>
+        </View>
       </View>
     );
   }
