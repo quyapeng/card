@@ -3,6 +3,7 @@ export default {
     "pages/index/index",
     "pages/me/me",
     "pages/list/index",
+    "pages/list/detail",
     "pages/node_detail/node_detail",
     "pages/thread_detail/thread_detail",
   ],

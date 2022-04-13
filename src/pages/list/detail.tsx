@@ -1,30 +1,37 @@
-import Taro from "@tarojs/taro";
+import Taro, { getCurrentInstance } from "@tarojs/taro";
 import React from "react";
 import { View, CoverImage, Text } from "@tarojs/components";
 import { ThreadList } from "../../components/thread_list";
-import { IThread } from "../../interfaces/thread";
-import api from "../../utils/api";
+import { DetailCard } from "../../interfaces/detail";
 
 import "./index.css";
 
 interface IState {
   loading: boolean;
-  threads: IThread[];
+  detail: DetailCard;
 }
 
 class Detail extends React.Component<{}, IState> {
   state = {
     loading: true,
-    threads: [],
+    detail: {},
   };
-
+  $instance = getCurrentInstance();
   async componentDidMount() {
     try {
-      // const res = await Taro.request<IThread[]>({
-      //   url: api.getHotNodes(),
+      let {
+        params: { id },
+      }: any = this.$instance.router;
+      console.log("id :", id);
+      // that.setState({
+      //   userinfo: res.result,
+      //   loading: false,
+      // });
+      // const res = await Taro.request<>({
+      //   url: api.getHotNodes(id),
       // });
       // this.setState({
-      //   threads: res.data,
+      //   detail: res.data,
       //   loading: false,
       // });
     } catch (error) {
@@ -35,7 +42,7 @@ class Detail extends React.Component<{}, IState> {
   }
 
   render() {
-    const { loading, threads } = this.state;
+    const { loading, detail } = this.state;
     return (
       <View className="detail">
         <View className="card">
