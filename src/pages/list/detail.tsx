@@ -1,10 +1,9 @@
 import Taro, { getCurrentInstance } from "@tarojs/taro";
 import React from "react";
 import { View, CoverImage, Text } from "@tarojs/components";
-import { ThreadList } from "../../components/thread_list";
 import { DetailCard } from "../../interfaces/detail";
 
-import "./index.css";
+import "./index.scss";
 
 interface IState {
   loading: boolean;
@@ -46,10 +45,7 @@ class Detail extends React.Component<{}, IState> {
     return (
       <View className="detail">
         <View className="card">
-          <CoverImage
-            className="img"
-            src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
-          />
+          <CoverImage className="img" src="" />
           <Text>卡片内容</Text>
         </View>
       </View>
