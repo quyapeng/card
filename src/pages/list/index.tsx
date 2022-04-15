@@ -5,7 +5,7 @@ import { View, CoverImage, Text } from "@tarojs/components";
 import { IThread } from "../../interfaces/thread";
 // import api from "../../utils/api";
 
-import "./index.css";
+import "./index.scss";
 
 interface IState {
   loading: boolean;

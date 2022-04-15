@@ -2,6 +2,7 @@ import Taro, { getCurrentInstance } from "@tarojs/taro";
 import React from "react";
 import { View, CoverImage, Text } from "@tarojs/components";
 import { DetailCard } from "../../interfaces/detail";
+const bgm = require("../../resource/true.jpeg");
 
 import "./index.scss";
 
@@ -45,8 +46,9 @@ class Detail extends React.Component<{}, IState> {
     return (
       <View className="detail">
         <View className="card">
-          <CoverImage className="img" src="" />
-          <Text>卡片内容</Text>
+          <CoverImage className="bgm" src={bgm}>
+            <Text>卡片内容</Text>
+          </CoverImage>
         </View>
       </View>
     );
