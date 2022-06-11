@@ -31,6 +31,24 @@ class Index extends React.Component<{}, IState> {
     userinfo: {
       openid: "",
     },
+    labelData: [
+      {
+        name: "新年",
+        icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
+      },
+      {
+        name: "生日",
+        icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
+      },
+      {
+        name: "节日",
+        icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
+      },
+      {
+        name: "自定义",
+        icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
+      },
+    ],
   };
 
   async componentDidMount() {
@@ -143,18 +161,14 @@ class Index extends React.Component<{}, IState> {
           </SwiperItem>
         </Swiper>
         <View className="flex-wrp" style="flex-direction:row;">
-          <View className="flex-item">
-            <Image src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
-            <Text>123</Text>
-          </View>
-          <View className="flex-item">
-            <Image src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
-            <Text>123</Text>
-          </View>
-          <View className="flex-item">
-            <Image src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
-            <Text>123</Text>
-          </View>
+          {this.state.labelData.map((i) => {
+            return (
+              <View className="flex-item">
+                <Image src={i.icon} />
+                <Text>{i.name}</Text>
+              </View>
+            );
+          })}
         </View>
         <ScrollView
           className="scrollview"
