@@ -36,7 +36,11 @@ class Nodes extends React.Component<{}, {}> {
     return (
       <View className="me">
         <View className="user_info">
-          <Image src={""} />
+          <Image
+            src={
+              "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+            }
+          />
           <Text>王小米啊</Text>
         </View>
         <View className="flex-wrp" style="flex-direction:row;">
@@ -57,9 +61,15 @@ class Nodes extends React.Component<{}, {}> {
             <Text>敬请期待</Text>
           </View>
         </View>
-        <View>
-          <Text>list</Text>
-          <Text>退出</Text>
+        <View className="list-babel border">
+          <View className="item">
+            <Text>list</Text>
+            <i></i>
+          </View>
+          <View className="item">
+            <Text>退出</Text>
+            <i></i>
+          </View>
         </View>
       </View>
     );

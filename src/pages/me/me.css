@@ -1,5 +1,54 @@
 .user_info {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  margin:0 40rpx;
+  
+}
+.border {
+  border-radius: 30rpx;
+  
+}
+.user_info image {
+  width:80rpx;
+  height:80rpx;
+  border-radius: 50%;
+}
+.user_info text {
+  margin-left: 20rpx;
+}
+.flex-wrp {
+  margin: 40rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.flex-item {
+  flex: 1;
+  margin: 0 auto;
+}
+.flex-item image {
+  display: block;
+  height: 80rpx;
+  width: 80rpx;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.flex-item text {
+  text-align: center;
+  display: block;
+  margin: 20rpx 0;
+}
+
+.list-babel{
+  margin: 40rpx;
+  background-color: #fff;
+}
+.list-babel .item{
+  border-bottom: 1px solid #ccc;
+  padding:16rpx;
+}
+.list-babel .item text{
+  font-size: 26rpx;
 }

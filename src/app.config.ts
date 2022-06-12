@@ -30,13 +30,14 @@ export default {
     ],
     color: "#000",
     selectedColor: "#56abe4",
-    backgroundColor: "#fff",
+    backgroundColor: "#ffffff",
     borderStyle: "white",
   },
   window: {
     backgroundTextStyle: "light",
-    navigationBarBackgroundColor: "#fff",
+    navigationBarBackgroundColor: "#ffffff",
     navigationBarTitleText: "祝福",
     navigationBarTextStyle: "black",
+    backgroundColor: "#dddddd",
   },
 };
