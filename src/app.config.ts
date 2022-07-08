@@ -11,7 +11,7 @@ export default {
     list: [
       {
         iconPath: "resource/latest.png",
-        selectedIconPath: "resource/lastest_on.png",
+        selectedIconPath: "https://i.qlion.com/static/banner.png",
         pagePath: "pages/index/index",
         text: "首页",
       },
