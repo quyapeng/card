@@ -1,7 +1,6 @@
 {
   "miniprogramRoot": "dist/",
   "projectname": "card",
-  "cloudfunctionRoot": "cloudfunctionRoot/",
   "description": "card",
   "appid": "wx2892253734ed00fc",
   "setting": {

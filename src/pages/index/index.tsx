@@ -78,22 +78,22 @@ class Index extends React.Component<{}, IState> {
   }
   getOpenId: any = (e) => {
     console.log("t", e);
-    Taro.cloud.init({
-      env: "test-2gufqy4ad894b9e7",
-      traceUser: true,
-    });
-    let that = this;
-    Taro.cloud
-      .callFunction({
-        name: "login",
-      })
-      .then((res) => {
-        console.log(res);
-        that.setState({
-          userinfo: res.result,
-          loading: false,
-        });
-      });
+    // Taro.cloud.init({
+    //   env: "test-2gufqy4ad894b9e7",
+    //   traceUser: true,
+    // });
+    // let that = this;
+    // Taro.cloud
+    //   .callFunction({
+    //     name: "login",
+    //   })
+    //   .then((res) => {
+    //     console.log(res);
+    //     that.setState({
+    //       userinfo: res.result,
+    //       loading: false,
+    //     });
+    //   });
   };
   onScrollToUpper() {}
 
