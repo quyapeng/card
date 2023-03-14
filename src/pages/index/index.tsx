@@ -52,20 +52,19 @@ class Index extends React.Component<{}, IState> {
   };
 
   async componentDidMount() {
-    try {
-      Taro.request<IThread[]>({
-        url: api.test(),
-        method: "GET",
-        complete: (res) => {
-          console.log("res----", res);
-        },
-      });
-    } catch (error) {
-      Taro.showToast({
-        title: "载入远程数据错误",
-      });
-    }
-
+    // try {
+    //   Taro.request<IThread[]>({
+    //     url: api.test(),
+    //     method: "GET",
+    //     complete: (res) => {
+    //       console.log("res----", res);
+    //     },
+    //   });
+    // } catch (error) {
+    //   Taro.showToast({
+    //     title: "载入远程数据错误",
+    //   });
+    // }
     // Taro.cloud.callFunction({
     //   name: "login",
     //   success: (res) => {
