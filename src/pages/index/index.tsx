@@ -33,19 +33,19 @@ class Index extends React.Component<{}, IState> {
     },
     labelData: [
       {
-        name: "新年",
+        name: "生日快乐",
         icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
       },
       {
-        name: "生日",
+        name: "情人节",
         icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
       },
       {
-        name: "节日",
+        name: "感恩有你",
         icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
       },
       {
-        name: "自定义",
+        name: "特殊纪念",
         icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
       },
     ],
@@ -139,7 +139,7 @@ class Index extends React.Component<{}, IState> {
           <SwiperItem>
             <Image
               style="width:100%;height: 200px;background: #fff;"
-              src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+              src="../../resource/active.png"
             />
           </SwiperItem>
           <SwiperItem>
