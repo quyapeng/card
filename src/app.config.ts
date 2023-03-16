@@ -1,9 +1,9 @@
 export default {
   pages: [
     "pages/index/index",
-    "pages/me/me",
     "pages/list/index",
     "pages/list/detail",
+    "pages/me/me",
     "pages/node_detail/node_detail",
     "pages/thread_detail/thread_detail",
   ],
