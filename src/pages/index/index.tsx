@@ -180,7 +180,7 @@ class Index extends React.Component<{}, IState> {
           onScrollToUpper={this.onScrollToUpper.bind(this)} // 使用箭头函数的时候 可以这样写 `onScrollToUpper={this.onScrollToUpper}`
           onScroll={this.onScroll}
         >
-          <View style={vStyleA}>A</View>
+          <View style={vStyleA}>111</View>
           <View style={vStyleB}>B</View>
           <View style={vStyleC}>C</View>
         </ScrollView>
