@@ -3,7 +3,6 @@ import React from "react";
 import { View, CoverImage, Text, Swiper, SwiperItem } from "@tarojs/components";
 // import { ThreadList } from "../../components/thread_list";
 import { IThread } from "../../interfaces/thread";
-// import api from "../../utils/api";
 
 import "./index.scss";
 
