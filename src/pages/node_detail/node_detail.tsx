@@ -1,65 +1,64 @@
-import Taro, { Current } from '@tarojs/taro'
-import React from 'react'
-import { View } from '@tarojs/components'
-import { ThreadList } from '../../components/thread_list'
-import { IThread } from '../../interfaces/thread'
-import api from '../../utils/api'
+import Taro, { Current } from "@tarojs/taro";
+import React from "react";
+import { View } from "@tarojs/components";
+import { ThreadList } from "../../components/thread_list";
+import { IThread } from "../../interfaces/thread";
+import api from "../../utils/api";
 
-import './index.css'
+import "./index.css";
 
 interface IState {
-  loading: boolean,
-  threads: IThread[]
+  loading: boolean;
+  threads: IThread[];
 }
 
 class NodeDetail extends React.Component<{}, IState> {
   state = {
     loading: true,
-    threads: []
-  }
+    threads: [],
+  };
 
-  componentWillMount () {
-    const { full_name } = Current.router.params
+  componentWillMount() {
+    const { full_name }: any = Current?.router?.params;
     Taro.setNavigationBarTitle({
-      title: decodeURI(full_name)
-    })
+      title: decodeURI(full_name),
+    });
   }
 
-  async componentDidMount () {
-    const { short_name } = Current.router.params
+  async componentDidMount() {
+    const { short_name }: any = Current?.router?.params;
     try {
-      const { data: { id } } = await Taro.request({
+      const {
+        data: { id },
+      } = await Taro.request({
         url: api.getNodeInfo({
-          name: short_name
-        })
-      })
+          name: short_name,
+        }),
+      });
       const res = await Taro.request<IThread[]>({
         url: api.getTopics({
-          node_id: id
-        })
-      })
+          node_id: id,
+        }),
+      });
       this.setState({
         threads: res.data,
-        loading: false
-      })
+        loading: false,
+      });
     } catch (error) {
       Taro.showToast({
-        title: '载入远程数据错误'
-      })
+        title: "载入远程数据错误",
+      });
     }
   }
 
-  render () {
-    const { loading, threads } = this.state
+  render() {
+    const { loading, threads } = this.state;
     return (
-      <View className='index'>
-        <ThreadList
-          threads={threads}
-          loading={loading}
-        />
+      <View className="index">
+        <ThreadList threads={threads} loading={loading} />
       </View>
-    )
+    );
   }
 }
 
-export default NodeDetail
+export default NodeDetail;
