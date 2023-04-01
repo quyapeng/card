@@ -56,6 +56,11 @@ class List extends React.Component<{}, IState> {
             <View className="demo-text-3">3</View>
           </SwiperItem>
         </Swiper>
+        <View className="content">
+          <Text>婚礼祝福</Text>
+          <Text>更多</Text>
+        </View>
+
         <View
           className="card"
           onClick={() => {
