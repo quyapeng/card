@@ -170,7 +170,7 @@ class Index extends React.Component<{}, IState> {
           })}
         </View>
         <ScrollView
-          className="scrollview"
+          className="scrolling"
           scrollY
           scrollWithAnimation
           scrollTop={scrollTop}

@@ -57,29 +57,29 @@ class List extends React.Component<{}, IState> {
           </SwiperItem>
         </Swiper>
         <View className="content">
-          <Text>婚礼祝福</Text>
-          <Text>更多</Text>
-        </View>
-
-        <View
-          className="card"
-          onClick={() => {
-            Taro.navigateTo({
-              url: "/pages/list/detail?id=1",
-            });
-          }}
-        >
-          <CoverImage
-            className="img"
-            src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
-          />
-          <Text>123</Text>
-        </View>
-        <View className="card">
-          <CoverImage
-            className="img"
-            src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
-          />
+          <View className="title">
+            <Text>婚礼祝福</Text>
+            <Text>更多</Text>
+          </View>
+          <View
+            className="card"
+            onClick={() => {
+              Taro.navigateTo({
+                url: "/pages/list/detail?id=1",
+              });
+            }}
+          >
+            <CoverImage
+              className="img"
+              src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+            />
+          </View>
+          <View className="card">
+            <CoverImage
+              className="img"
+              src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+            />
+          </View>
         </View>
       </View>
     );
