@@ -129,18 +129,23 @@ class Index extends React.Component<{}, IState> {
         <View>{this.state.userinfo?.openid}</View> */}
         {/* <ThreadList threads={threads} loading={loading} /> */}
         <Swiper
-          className="index-h"
+          // className="index-h"
           indicatorColor="#999"
           indicatorActiveColor="#333"
           circular
+          vertical
           indicatorDots
           autoplay
         >
+          {/* <SwipedItem>
+          </SwipedItem> */}
           <SwiperItem>
-            <Image
-              style="width:100%;height: 200px;background: #fff;"
-              src="../../resource/active.png"
-            />
+            <View className="demo-text-1">
+              <Image
+                style="width:100%;height: 200px;background: #fff;"
+                src="../../resource/active.png"
+              />
+            </View>
           </SwiperItem>
           <SwiperItem>
             <View className="demo-text-2">
