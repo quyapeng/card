@@ -3,7 +3,7 @@ import React from "react";
 import { View, Text, Navigator, Image } from "@tarojs/components";
 
 import api from "../utils/api";
-import { timeagoInst, Thread_DETAIL_NAVIGATE } from "../utils";
+import { Thread_DETAIL_NAVIGATE } from "../utils";
 import { IMember } from "../interfaces/member";
 import { INode } from "../interfaces/node";
 
