@@ -3,7 +3,7 @@ import React from "react";
 import { View, CoverImage, Text, Swiper, SwiperItem } from "@tarojs/components";
 // import { ThreadList } from "../../components/thread_list";
 import { IThread } from "../../interfaces/thread";
-
+import { Item } from "../../components/item";
 import "./index.scss";
 
 interface IState {
@@ -79,6 +79,9 @@ class List extends React.Component<{}, IState> {
               className="img"
               src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
             />
+          </View>
+          <View>
+            <Item url="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
           </View>
         </View>
       </View>
