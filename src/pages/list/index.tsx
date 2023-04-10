@@ -81,7 +81,10 @@ class List extends React.Component<{}, IState> {
             />
           </View>
           <View>
-            <Item url="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Item
+              src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+              id={1}
+            />
           </View>
         </View>
       </View>

@@ -186,13 +186,22 @@ class Index extends React.Component<{}, IState> {
           onScroll={this.onScroll}
         >
           <View style={vStyleA}>
-            <Item url="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Item
+              src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+              id={1}
+            />
           </View>
           <View style={vStyleB}>
-            <Item url="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Item
+              src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+              id={1}
+            />
           </View>
           <View style={vStyleC}>
-            <Item url="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg" />
+            <Item
+              src="https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg"
+              id={1}
+            />
           </View>
         </ScrollView>
       </View>

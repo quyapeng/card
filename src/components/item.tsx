@@ -10,30 +10,31 @@ import { INode } from "../interfaces/node";
 import "./thread.css";
 
 interface IProps {
-  url: string;
+  src: string;
+  id: number;
 }
 
 class Item extends React.Component<IProps, {}> {
   handleNavigate = () => {
     // 这里必须显式指名 this.props 包含 tid
     // 或设置 defaultProps
-    // const { tid, not_navi } = this.props;
+    const { id } = this.props;
     // if (not_navi) {
     //   return;
     // }
     // 懒得用 redux 了
     eventCenter.trigger(Thread_DETAIL_NAVIGATE, this.props);
     Taro.navigateTo({
-      url: "/pages/thread_detail/thread_detail",
+      url: "/pages/thread_detail/thread_detail?id=" + id,
     });
   };
 
   render() {
-    const { url } = this.props;
+    const { src } = this.props;
 
     return (
       <View className="item" onClick={this.handleNavigate}>
-        <Image src={url} className="avatar" />
+        <Image src={src} className="avatar" />
       </View>
     );
   }
