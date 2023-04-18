@@ -8,3 +8,4 @@ $ npm i -g @tarojs/cli
 $ taro build --type weapp --watch
 ```
 // "cloudfunctionRoot": "cloudfunctionRoot/",
+// node版本16+
