@@ -34,7 +34,7 @@ class Index extends React.Component<{}, IState> {
     labelData: [
       {
         name: "生日快乐",
-        icon: "https://alifei04.cfp.cn/creative/vcg/800/new/VCG41N1210205351.jpg",
+        icon: "../../resource/label_icon1.png",
       },
       {
         name: "情人节",
