@@ -122,12 +122,8 @@ class Index extends React.Component<{}, IState> {
       "background-color": "rgb(241,241,241)",
       color: "#333",
     };
-    // const { loading, threads } = this.state;
     return (
       <View className="index">
-        {/* <View onClick={this.getOpenId}>test</View>
-        <View>{this.state.userinfo?.openid}</View> */}
-        {/* <ThreadList threads={threads} loading={loading} /> */}
         <Swiper
           // className="index-h"
           indicatorColor="#999"
