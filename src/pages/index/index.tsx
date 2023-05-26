@@ -133,8 +133,6 @@ class Index extends React.Component<{}, IState> {
           indicatorDots
           autoplay
         >
-          {/* <SwipedItem>
-          </SwipedItem> */}
           <SwiperItem>
             <View className="demo-text-1">
               <Image
