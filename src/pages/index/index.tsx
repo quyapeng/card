@@ -129,7 +129,6 @@ class Index extends React.Component<{}, IState> {
           indicatorColor="#999"
           indicatorActiveColor="#333"
           circular
-          vertical
           indicatorDots
           autoplay
         >

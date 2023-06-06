@@ -37,11 +37,10 @@ class List extends React.Component<{}, IState> {
     const { loading, threads } = this.state;
     return (
       <View className="index">
-        <Swiper
+        {/* <Swiper
           className="test-h"
           indicatorColor="#999"
           indicatorActiveColor="#333"
-          vertical
           circular
           indicatorDots
           autoplay
@@ -55,7 +54,7 @@ class List extends React.Component<{}, IState> {
           <SwiperItem>
             <View className="demo-text-3">3</View>
           </SwiperItem>
-        </Swiper>
+        </Swiper> */}
         <View className="content">
           <View className="title">
             <Text>婚礼祝福</Text>
