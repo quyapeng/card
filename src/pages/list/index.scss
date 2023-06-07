@@ -7,4 +7,10 @@
       color: #fff;
     }
   }
+  .title {
+    display: flex;
+    text {
+      flex: 1 auto;
+    }
+  }
 }
