@@ -40,6 +40,7 @@ class List extends React.Component<{}, IState> {
         <View className="content">
           <View className="title">
             <Text>婚礼祝福</Text>
+            <Text>生日快乐</Text>
             <Text>更多</Text>
           </View>
           <View
