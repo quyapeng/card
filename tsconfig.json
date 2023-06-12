@@ -1,36 +1,39 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "module": "commonjs",
-    "removeComments": false,
-    "preserveConstEnums": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "allowSyntheticDefaultImports": true,
-    "outDir": "lib",
-    "noUnusedParameters": true,
-    "noUnusedLocals": false,
-    "strictNullChecks": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "rootDir": ".",
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
     "jsx": "preserve",
-    "jsxFactory": "React.createElement",
-    "allowJs": true,
-    "typeRoots": [
-      "node_modules/@types"
-   ]
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators":true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "types": [
+      "webpack-env",
+      "@dcloudio/types",
+      "miniprogram-api-typings",
+      "mini-types"
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
   },
   "exclude": [
-    "__tests__",
     "node_modules",
+    "unpackage",
     "dist",
-    "tests",
-    "jest",
-    "lib",
-    "**/*.test.ts",
-    "**/*.spec.ts"
-  ],
-  "compileOnSave": false
+    "src/**/*.nvue"
+  ]
 }

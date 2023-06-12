@@ -1,11 +1,19 @@
-# card
+# my-project
 
-## 运行
-
-```bash
-$ npm install
-$ npm i -g @tarojs/cli
-$ taro build --type weapp --watch
+## Project setup
 ```
-// "cloudfunctionRoot": "cloudfunctionRoot/",
-// node版本16+
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn serve
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
