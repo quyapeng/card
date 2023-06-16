@@ -1,16 +1,55 @@
 {
   "pages": [
-    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
     {
       "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "uni-app"
+        "navigationBarTitleText": "index"
       },
       "usingComponents": {
         "van-button": "/wxcomponents/vant/button/index"
       }
+    },
+    {
+      "path": "pages/list/index",
+      "style": {
+        "navigationBarTitleText": "list"
+      },
+      "usingComponents": {}
+    },
+    {
+      "path": "pages/user/index",
+      "style": {
+        "navigationBarTitleText": "user"
+      },
+      "usingComponents": {}
     }
   ],
+  "tabBar": {
+    "color": "#34332e",
+    "selectedColor": "#ffba00",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "static/resource/index.png",
+        "selectedIconPath": "static/resource/index_s.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "static/resource/find.png",
+        "selectedIconPath": "static/resource/find_s.png",
+        "pagePath": "pages/list/index",
+        "text": "发现"
+      },
+      {
+        "iconPath": "static/resource/me.png",
+        "selectedIconPath": "static/resource/me_s.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+    ]
+  },
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",

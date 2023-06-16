@@ -68,6 +68,7 @@
     "@dcloudio/uni-stacktracey": "^2.0.2-3080420230530001",
     "@dcloudio/uni-stat": "^2.0.2-3080420230530001",
     "@types/webpack-env": "^1.18.1",
+    "@vant/weapp": "^1.10.19",
     "@vue/shared": "^3.0.0",
     "core-js": "^3.8.3",
     "flyio": "^0.6.2",
@@ -96,6 +97,8 @@
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "postcss-comment": "^2.0.0",
+    "sass": "^1.63.4",
+    "sass-loader": "^13.3.2",
     "vue-template-compiler": ">= 2.6.14 < 2.7"
   },
   "browserslist": [
