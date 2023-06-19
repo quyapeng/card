@@ -5,6 +5,7 @@
       <text class="title">{{ title }}</text>
       <van-button>submit</van-button>
     </view>
+    <button>submit</button>
   </view>
 </template>
 

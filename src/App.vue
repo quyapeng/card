@@ -12,9 +12,9 @@ export default {
   },
   methods: {
     upDataApp() {
-      //版本更新
+      // 版本更新
       if (wx.canIUse("getUpdateManager")) {
-        //判断当前微信版本是否支持版本更新
+        // 判断当前微信版本是否支持版本更新
         const updateManager = wx.getUpdateManager();
         console.log("updateManager", updateManager);
         updateManager.onCheckForUpdate(function (res) {

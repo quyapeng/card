@@ -6,7 +6,7 @@
         "navigationBarTitleText": "index"
       },
       "usingComponents": {
-        "van-button": "/wxcomponents/vant/button/index"
+        "button": "/wxcomponents/vant/button/index"
       }
     },
     {
