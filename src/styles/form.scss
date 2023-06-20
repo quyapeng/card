@@ -1,0 +1,22 @@
+// 写在这里是为了覆盖van默认样式
+.vant-form-container {
+  border-radius: 20rpx;
+  background: #fff;
+  .van-cell {
+    background-color: transparent;
+  }
+  .van-field__body {
+    flex: 1 1 auto;
+  }
+  .van-cell__title {
+    display: flex;
+    padding: var(--cell-vertical-padding, 10px) 0;
+  }
+  .van-cell__value {
+    display: flex;
+    align-items: center;
+    .van-cell {
+      padding: var(--cell-vertical-padding, 10px) 0;
+    }
+  }
+}
