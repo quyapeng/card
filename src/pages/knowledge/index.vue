@@ -1,79 +1,82 @@
 <template>
   <!-- <van-nav-bar title="标题" left-text="返回" right-text="按钮" left-arrow /> -->
-  <custom-nav-bar
-    title="标准导航栏"
-    background="#fff"
-    back="{{true}}"
-    home="{{true}}"
-  ></custom-nav-bar>
-  <view class="page-container">
-    <van-search value="123" shape="round" placeholder="请输入搜索关键词" />
-    <van-tabs
-      :active="activeTab"
-      color="#1989fa"
-      title-active-color="#1989fa"
-      title-inactive-color="#999"
-      @change="handleTabChange"
-    >
-      <van-tab title="标签 1"></van-tab>
-      <van-tab title="标签 2"></van-tab>
-      <van-tab title="标签 3"></van-tab>
-      <van-tab title="标签 4"></van-tab>
-    </van-tabs>
-    <custom-pull-down class="custom-pull-down">
-      <view name="refresh-animation"></view>
-      <view slot="refresh-before-trigger" class="custom-refresh-zone-tips-loading">
-        继续下拉刷新
-      </view>
-      <view slot="refresh-after-trigger" class="custom-refresh-zone-tips-loading">释放刷新</view>
-      <view slot="refresh-loading" class="custom-refresh-zone-tips-loading">加载中</view>
-      <template #content>
-        <view class="card-container">
-          <view v-for="item in 10" class="single-card-container">
-            <view class="card__title">超级超级超级超级超级超级超级超级超级超级长的标题</view>
-            <!-- <van-divider class="van-divider--nomargin" /> -->
-            <text class="card__status">状态hahha</text>
-            <view class="card__main">
-              <view class="card__content">
-                <view class="main__col">
-                  <text class="col__title">收款方户名：</text>
-                  <text class="col__value">张三</text>
+  <view>
+    <custom-nav-bar
+      title="标准导航栏"
+      background="#fff"
+      back="{{true}}"
+      home="{{true}}"
+    ></custom-nav-bar>
+    <view class="page-container">
+      <van-search value="123" shape="round" placeholder="请输入搜索关键词" />
+      <van-tabs
+        :active="activeTab"
+        color="#1989fa"
+        title-active-color="#1989fa"
+        title-inactive-color="#999"
+        @change="handleTabChange"
+      >
+        <van-tab title="标签 1"></van-tab>
+        <van-tab title="标签 2"></van-tab>
+        <van-tab title="标签 3"></van-tab>
+        <van-tab title="标签 4"></van-tab>
+      </van-tabs>
+      <custom-pull-down class="custom-pull-down">
+        <view name="refresh-animation"></view>
+        <view slot="refresh-before-trigger" class="custom-refresh-zone-tips-loading">
+          继续下拉刷新
+        </view>
+        <view slot="refresh-after-trigger" class="custom-refresh-zone-tips-loading">释放刷新</view>
+        <view slot="refresh-loading" class="custom-refresh-zone-tips-loading">加载中</view>
+        <template #content>
+          <view class="card-container">
+            <view v-for="(item, index) in 10" class="single-card-container" :key="index">
+              <view class="card__title">超级超级超级超级超级超级超级超级超级超级长的标题</view>
+              <!-- <van-divider class="van-divider--nomargin" /> -->
+              <text class="card__status">状态hahha</text>
+              <view class="card__main">
+                <view class="card__content">
+                  <view class="main__col">
+                    <text class="col__title">收款方户名：</text>
+                    <text class="col__value">张三</text>
+                  </view>
+                  <view class="main__col">
+                    <text class="col__title">付款金额：</text>
+                    <text class="col__value">3000.00</text>
+                  </view>
+                  <view class="main__col">
+                    <text class="col__title">收款方户名：</text>
+                    <text class="col__value">云润食品集团有限公司管理人哈哈哈哈哈哈</text>
+                  </view>
+                  <view class="main__col">
+                    <text class="col__title">收款方户名：</text>
+                    <text class="col__value">云润食品集团有限公司管理人哈哈哈哈哈哈</text>
+                  </view>
                 </view>
-                <view class="main__col">
-                  <text class="col__title">付款金额：</text>
-                  <text class="col__value">3000.00</text>
-                </view>
-                <view class="main__col">
-                  <text class="col__title">收款方户名：</text>
-                  <text class="col__value">云润食品集团有限公司管理人哈哈哈哈哈哈</text>
-                </view>
-                <view class="main__col">
-                  <text class="col__title">收款方户名：</text>
-                  <text class="col__value">云润食品集团有限公司管理人哈哈哈哈哈哈</text>
-                </view>
-              </view>
-              <van-divider hairline />
-              <view class="card__footer">
-                <view class="footer__item">
-                  <van-icon name="manager" class="item__icon" />
-                  <span class="item__value">张山峰</span>
-                </view>
-                <view class="footer__item">
-                  <van-icon name="underway" class="item__icon" />
-                  <span class="item__value">2022-11-03 12:30:00</span>
+                <van-divider hairline />
+                <view class="card__footer">
+                  <view class="footer__item">
+                    <van-icon name="manager" class="item__icon" />
+                    <span class="item__value">张山峰</span>
+                  </view>
+                  <view class="footer__item">
+                    <van-icon name="underway" class="item__icon" />
+                    <span class="item__value">2022-11-03 12:30:00</span>
+                  </view>
                 </view>
               </view>
             </view>
           </view>
-        </view>
-      </template>
-    </custom-pull-down>
+        </template>
+      </custom-pull-down>
+    </view>
   </view>
 </template>
 
 <script setup lang="ts">
 // uniapp bug
 // import Variable from '@/styles/index.module.css?inline'
+import { ref, onMounted, useCssModule } from 'vue'
 const activeTab = ref(0)
 onMounted(() => {
   console.log(useCssModule())

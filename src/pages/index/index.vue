@@ -24,8 +24,8 @@
 
 <script setup lang="ts">
 import { httpGetProvince } from '@/api/user'
-import PVantField from '@/components/PVant/PVantField/index.vue'
-import { useRoute, useRouter } from '@/plugins/uni-router'
+import PVantField from '../../components/PVant/PVantField/index.vue'
+import { useRoute, useRouter } from '../../plugins/uni-router'
 
 // const curRouter = useRouter()
 
@@ -44,6 +44,7 @@ import { useRoute, useRouter } from '@/plugins/uni-router'
 //   curRouter.push('/pages/test/test')
 // }, 2000)
 
+import { ref } from 'vue'
 const username = ref('1234')
 
 function handleButton() {

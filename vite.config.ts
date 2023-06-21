@@ -11,7 +11,7 @@ import { ConfigEnv, defineConfig, loadEnv } from 'vite'
 import commonjs from 'vite-plugin-commonjs'
 
 import ROUTES from './build/route'
-console.log(ROUTES, '生成的路由')
+console.log(resolve(__dirname, 'src/'), '生成的路由')
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command, mode }: ConfigEnv) => {
@@ -27,7 +27,7 @@ export default defineConfig(({ command, mode }: ConfigEnv) => {
     },
     resolve: {
       alias: {
-        '@': resolve(__dirname, 'src')
+        '@': resolve(__dirname, './src')
       }
     },
     define: {

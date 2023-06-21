@@ -76,6 +76,7 @@
 <script setup lang="ts">
 // uniapp bug
 // import Variable from '@/styles/index.module.css?inline'
+import { ref, onMounted, useCssModule } from 'vue'
 const activeTab = ref(0)
 onMounted(() => {
   console.log(useCssModule())
@@ -110,7 +111,7 @@ function handleTabChange(e) {}
   border: 2rpx solid #fff;
   border-radius: 16rpx;
   background-color: #fff;
-  box-shadow: 0rpx 0rpx 8rpx 1rpx rgba(165, 165, 165, 0.1);
+  box-shadow: 0 0 8rpx 1rpx rgba(165, 165, 165, 0.1);
   &:nth-child(1) {
     margin-top: 0;
   }
