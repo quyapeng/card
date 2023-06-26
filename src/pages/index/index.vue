@@ -1,31 +1,9 @@
-<template>
-  <view class="content">
-    <p-vant-field
-      v-model="username"
-      use-button-slot
-      placeholder="请输入用户名"
-      @change="handleChange"
-    >
-      <template #button>
-        <van-button size="small" type="primary">发送验证码</van-button>
-      </template>
-      <template #label>hahha</template>
-    </p-vant-field>
-    <van-field use-button-slot :value="true">
-      <template #label>hahha</template>
-      <template #button>
-        <van-button size="small" type="primary">发送验证码</van-button>
-      </template>
-      测试
-    </van-field>
-    <wx-test></wx-test>
-  </view>
-</template>
+<template></template>
 
 <script setup lang="ts">
-import { httpGetProvince } from '@/api/user'
-import PVantField from '../../components/PVant/PVantField/index.vue'
-import { useRoute, useRouter } from '../../plugins/uni-router'
+// import { httpGetProvince } from '@/api/user'
+// import PVantField from '../../components/PVant/PVantField/index.vue'
+// import { useRoute, useRouter } from '../../plugins/uni-router'
 
 // const curRouter = useRouter()
 

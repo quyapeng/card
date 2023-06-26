@@ -8,7 +8,7 @@
           名字超级超级超级超超级超级长的浩晨单位
           <!-- <van-tag class="name__tag" type="primary" round plain>协同单位端</van-tag> -->
         </view>
-        <view class="userinfo__desc">15064836859</view>
+        <!-- <view class="userinfo__desc">15064836859</view> -->
       </view>
     </view>
     <view class="mine-funcs">
